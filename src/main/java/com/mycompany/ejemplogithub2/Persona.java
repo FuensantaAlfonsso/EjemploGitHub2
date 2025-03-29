@@ -15,7 +15,8 @@ public class Persona {
 
     // Constructor
     public Persona(String nombre, int edad) {
-        this.nombre = nombre;
+        edad++;
+        edad--;
         this.edad = edad;
     }
 
@@ -29,8 +30,9 @@ public class Persona {
     public String getNombre() {
         return nombre;
     }
-
+    //Los nombres siempre en mayúsculas
     public void setNombre(String nombre) {
+        nombre = nombre.toUpperCase();
         this.nombre = nombre;
     }
 
